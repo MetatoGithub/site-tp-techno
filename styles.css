@@ -7,13 +7,13 @@ body {
 
 h1 {
 	border: 1px solid #2F2D2E; 
-	background: rgb(2,0,36);
-	background: linear-gradient(93deg, rgba(2,0,36,1) 0%, rgba(1,111,185,1) 50%, rgba(2,0,36,1) 100%); 
+	background: rgb(47,45,46);
+	background: radial-gradient(circle, rgba(47,45,46,1) 10%, rgba(1,111,185,1) 16%, rgba(47,45,46,1) 23%); 
 	color: white;
 }
 .titlepad { 
-	padding-top: 15px; 
-	padding-bottom: 15px; 
+	padding-top: 25px; 
+	padding-bottom: 25px; 
 }
 strong {
 	color: #FFA69E;
@@ -22,4 +22,31 @@ strong {
 	font-family: "Trebuchet MS", sans-serif; 
 	font-size: 18pt;
 	color: white
+}
+.boutanim {
+    background-color: #000000; /* Green */
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.boutanim:hover {
+    background-color: black;
+    border-radius: 4px;
+    animation-name: rgbanim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+@keyframes rgbanim{
+    0%   {border: 2px solid red;color: red;}
+    16%  {border: 2px solid yellow;color: yellow;}
+    32%  {border: 2px solid green;color: green;}
+    48% {border: 2px solid aqua;color: aqua;}
+    64% {border: 2px solid blue;color: blue;}
+    80% {border: 2px solid purple;color: purple;}
+    100% {border: 2px solid red;color: red;}
 }
