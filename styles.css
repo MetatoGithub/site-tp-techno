@@ -1,7 +1,25 @@
 body {
 	background-color: #2F2D2E;  
 	color: #D7EBBA; 
+	font-family: "Verdana"; 
+	text-align: center 
+}
+
+h1 {
+	border: 1px solid #2F2D2E; 
+	background: rgb(2,0,36);
+	background: linear-gradient(93deg, rgba(2,0,36,1) 0%, rgba(1,111,185,1) 50%, rgba(2,0,36,1) 100%); 
+	color: white;
+}
+.titlepad { 
+	padding-top: 15px; 
+	padding-bottom: 15px; 
 }
 strong {
 	color: #FFA69E;
 } 
+.meme { 
+	font-family: "Trebuchet MS", sans-serif; 
+	font-size: 18pt;
+	color: white
+}
