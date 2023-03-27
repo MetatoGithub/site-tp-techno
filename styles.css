@@ -8,7 +8,6 @@ body {
 h1 {
 	border: 1px solid #2F2D2E; 
 	background: rgb(47,45,46);
-	background: radial-gradient(circle, rgba(47,45,46,1) 10%, rgba(1,111,185,1) 16%, rgba(47,45,46,1) 23%); 
 	color: white;
 }
 .titlepad { 
@@ -49,4 +48,17 @@ strong {
     64% {border: 2px solid blue;color: blue;}
     80% {border: 2px solid purple;color: purple;}
     100% {border: 2px solid red;color: red;}
+}
+.banner{
+    background-color:#4f4d4d;
+    color: rgb(0, 0, 0);
+    height: 40px;
+    font-size: 16pt;
+    text-align: center;
+    margin: 0px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+.centrerTexte{
+    text-align: center;
 }
