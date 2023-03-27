@@ -6,9 +6,9 @@
 	<link rel="stylesheet" href="styles.css">
 	<script>
 		function deezNutz() {
-			document.getElementById("resnum").innerHTML =
-			Math.floor(Math.random() * 69);
-		}
+		const n = Math.floor(Math.random() * 499) + 1;
+		document.getElementById("resnum").innerHTML =("<img src="meme${n}.jpg">");
+	}
 	</script>
 </head>
 <body>
