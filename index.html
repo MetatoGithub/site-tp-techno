@@ -6,9 +6,20 @@
 	<link rel="stylesheet" href="styles.css">
 	<script>
 		function deezNutz() {
-		const n = Math.floor(Math.random() * 499) + 1;
-		document.getElementById("resnum").innerHTML =("<img src="meme${n}.jpg">");
-	}
+		const n = Math.floor(Math.random() * 498) + 1;
+		document.getElementById("resnum").innerHTML =(`<img src="../memes/meme${n}.jpg" height=239px width=324px>`);
+		}
+		async function linegen() {
+			const util = require("util");
+			const fs = require("fs");
+			const readFile = util.promisify(fs.readFile);
+			const fileContent = await readFile("caption.txt", "utf-8");
+			var lines = fileContent.split("\n");
+			var randLineNum = Math.floor(Math.random() * lines.length);
+			return(lines[randLineNum]);
+		}
+		module.exports = linegen;
+		}
 	</script>
 </head>
 <body>
