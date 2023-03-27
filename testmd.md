@@ -1,1 +1,1 @@
-`dice: [[captions]]`
+dice: [[captions]]
