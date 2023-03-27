@@ -1,1 +1,1 @@
-`dice: captions.md`
+`dice: [[captions.md]]`
