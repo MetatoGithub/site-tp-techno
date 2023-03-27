@@ -1,6 +1,6 @@
 body {
-	background-color: #2F2D2E;  
-	color: #D7EBBA; 
+	background-color: #2F2D2E;  /*def black*/
+	color: #D7EBBA; /*def green*/
 	font-family: "Verdana"; 
 	text-align: center 
 }
@@ -15,7 +15,7 @@ h1 {
 	padding-bottom: 25px; 
 }
 strong {
-	color: #FFA69E;
+	color: #FFA69E;/*def pink*/
 } 
 .meme { 
 	font-family: "Trebuchet MS", sans-serif; 
@@ -23,7 +23,7 @@ strong {
 	color: white
 }
 .boutanim {
-    background-color: #000000; /* Green */
+    background-color: #000000;
     border: 2px solid white;
     border-radius: 4px;
     color: white;
@@ -50,7 +50,7 @@ strong {
     100% {border: 2px solid red;color: red;}
 }
 .banner{
-    background-color:#4f4d4d;
+    background-color:#4f4d4d;/*gray*/
     color: rgb(0, 0, 0);
     height: 40px;
     font-size: 16pt;
@@ -61,4 +61,12 @@ strong {
 }
 .centrerTexte{
     text-align: center;
+}
+lienaa:hover {
+    background-color: #FFA69E;
+    font-weight: bold;
+}
+a{
+    color: #D7EBBA;
+    text-decoration: none;
 }
