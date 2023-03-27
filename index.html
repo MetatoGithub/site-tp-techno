@@ -6,7 +6,8 @@
 	<link rel="stylesheet" href="styles.css">
 	<script>
 		function deezNutz() {
-			alert("boob");
+			document.getElementById("resnum").innerHTML =
+			Math.floor(Math.random() * 69);
 		}
 	</script>
 </head>
@@ -25,10 +26,9 @@
 	<p class="meme"> Voici les memes ! </p>
 	<br/>
     <button class="boutanim" onclick="deezNutz()">Test</button>
-
     <br/>
     <br/>
-    <br/>
+    <p id="resnum">lol</p>
     <br/>
     <br/>
 	<br/>
