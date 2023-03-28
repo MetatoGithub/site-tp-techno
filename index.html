@@ -5,10 +5,16 @@
 	<title>Site bien de Tim et Emelyne</title>
 	<link rel="stylesheet" href="styles.css">
 	<script>
-		function deezNutz() {
+		function ranMeme() {
 		const n = Math.floor(Math.random() * 498) + 1;
-		document.getElementById("resnum").innerHTML =(`<img src="../memes/meme${n}.jpg" height=239px width=324px>`);
+		document.getElementById("resnum").innerHTML =(`<img src="memes/meme${n}.jpg" height=239px width=324px>`);
+		const m = Math.floor(Math.random() * 45) + 1;
+		document.getElementById("mcap").innerHTML =(`<img src="caps/row-${m}-column-1.png" width=324px>`);
 		}
+		function ranCap() {
+			const n = Math.floor(Math.random() * 45) + 1;
+			document.getElementById("mcap").innerHTML =(`<img src="caps/row-${n}-column-1.png" width=324px>`);
+			}
 		async function linegen() {
 			const util = require("util");
 			const fs = require("fs");
@@ -35,10 +41,11 @@
 	<p> Donc madame, on espère que vous allez bien vous amuser avec notre <strong>Super site trop génial de la mort </strong>.</p>
 	<p class="meme"> Voici les memes ! </p>
 	<br/>
-    <button class="boutanim" onclick="deezNutz()">Test</button>
+    <button class="boutanim" onclick="ranMeme()">The Meme Generator.</button>
     <br/>
     <br/>
-    <p id="resnum">lol</p>
+	<p id="mcap"></p>
+    <p id="resnum"></p>
     <br/>
     <br/>
 	<br/>
