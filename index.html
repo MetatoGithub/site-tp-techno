@@ -5,20 +5,12 @@
 	<title>Site bien de Tim et Emelyne</title>
 	<link rel="stylesheet" href="styles.css">
 	<script>
-		function deezNutz() {
+		function memeGen() {
 		const n = Math.floor(Math.random() * 498) + 1;
-		document.getElementById("resnum").innerHTML =(`<img src="../memes/meme${n}.jpg" height=239px width=324px>`);
+		document.getElementById("resnum").innerHTML =(`<img src="memes/meme${n}.jpg" height=717px width=972px>`);
+		const m = Math.floor(Math.random() * 45) + 1;
+		document.getElementById("rancap").innerHTML =(`<img src="caps/row-${m}-column-1.png" width=972px>`);
 		}
-		async function linegen() {
-			const util = require("util");
-			const fs = require("fs");
-			const readFile = util.promisify(fs.readFile);
-			const fileContent = await readFile("caption.txt", "utf-8");
-			var lines = fileContent.split("\n");
-			var randLineNum = Math.floor(Math.random() * lines.length);
-			return(lines[randLineNum]);
-		}
-		module.exports = linegen;
 	</script>
 </head>
 <body>
@@ -26,7 +18,7 @@
 		<p class="titlepad"> Site TP techno: les memes (car on est drôle) </p> 
 	</h1>
 	<div class="banner centrerTexte">
-        <lienaa><a href="h.txt"> Page 2 </a></lienaa>/<lienaa><a href="https://google.fr/"> Page de test: Google</a></lienaa>
+        <lienaa><a href="temp.html">  Page 2  </a></lienaa>/<lienaa><a href="https://google.fr/">  Page de test: Google  </a></lienaa>
     </div>
 	<p class= "para1"> Concrètement on est des gros memeurs de <strong> l'internet
 	</strong>. Donc aujourd'hui, Tim et Emelyne de la 2GT4 vont vous présenter <strong> leur site </strong>. </p>
@@ -35,10 +27,11 @@
 	<p> Donc madame, on espère que vous allez bien vous amuser avec notre <strong>Super site trop génial de la mort </strong>.</p>
 	<p class="meme"> Voici les memes ! </p>
 	<br/>
-    <button class="boutanim" onclick="deezNutz()">Test</button>
+    <button class="boutanim" onclick="memeGen()">Test</button>
     <br/>
     <br/>
-    <p id="resnum">lol</p>
+	<p id="rancap"></p>
+    <p id="resnum"></p>
     <br/>
     <br/>
 	<br/>
