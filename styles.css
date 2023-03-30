@@ -4,7 +4,9 @@ body {
 	font-family: "Verdana"; 
 	text-align: center 
 }
-
+.para1 {
+	font-size: 25px;
+}
 h1 {
 	border: 1px solid #2F2D2E; 
 	background: rgb(47,45,46);
@@ -51,7 +53,7 @@ strong {
 }
 .banner{
     background-color:#4f4d4d;/*gray*/
-    color: rgb(0, 0, 0);
+    color: #D7EBBA;
     height: 40px;
     font-size: 16pt;
     text-align: center;
@@ -62,8 +64,13 @@ strong {
 .centrerTexte{
     text-align: center;
 }
+lienaa{
+	padding: 5px;
+	border: 2px solid #D7EBBA;
+	border-radius: 10px;
+}
 lienaa:hover {
-    background-color: #FFA69E;
+    background-color: #617544;
     font-weight: bold;
 }
 a{
