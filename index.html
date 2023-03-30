@@ -3,34 +3,36 @@
 <head>
 	<meta charset="utf-8">
 	<title>Site bien de Tim et Emelyne</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles.css"> <!--Ajout d'une fiche CSS-->
 	<script>
-		function memeGen() {
-		const n = Math.floor(Math.random() * 498) + 1;
-		document.getElementById("resnum").innerHTML =(`<img src="memes/meme${n}.jpg" height=717px width=972px>`);
-		const m = Math.floor(Math.random() * 45) + 1;
-		document.getElementById("rancap").innerHTML =(`<img src="caps/row-${m}-column-1.png" width=972px>`);
+		function memeGen() { /*Définition d'une fonction*/
+		const n = Math.floor(Math.random() * 498) + 1;/*nombre aleatoire entre 1 et 499*/
+		document.getElementById("resnum").innerHTML =(`<img src="memes/meme${n}.jpg" height=717px width=972px>`);/*chaque image est liée a un chiffre*/
+		const m = Math.floor(Math.random() * 45) + 1;/*nombre aleatoire entre 1 et 46*/
+		document.getElementById("rancap").innerHTML =(`<img src="caps/row-${m}-column-1.png" width=972px>`);/*chaque image est liée a un chiffre*/
 		}
 	</script>
 </head>
 <body>
 	<h1>
-		<p class="titlepad"> Site TP techno: les memes (car on est drôle) </p> 
+		<p class="titlepad"> Site TP techno: les memes</p> 
 	</h1>
 	<div class="banner centrerTexte">
-        <lienaa><a href="temp.html">  Page 2  </a></lienaa>/<lienaa><a href="https://google.fr/">  Page de test: Google  </a></lienaa>
+        <lienaa><a href="temp.html">  Page 2  </a></lienaa><bigAhhSlash>/</bigAhhSlash><lienaa><a href="https://google.fr/">  Page de test: Google  </a></lienaa>
     </div>
-	<p class= "para1"> Concrètement on est des gros memeurs de <strong> l'internet
-	</strong>. Donc aujourd'hui, Tim et Emelyne de la 2GT4 vont vous présenter <strong> leur site </strong>. </p>
-	<p> Pour commencer, qu'est ce qu'un <strong> meme? </strong>. Un meme est une petite image rigolote qui peut être détournée de plein de façons elles-même rigolottes. Les memes sont souvent utilisé pour faire de l'humour sur <strong> internet </strong>! </p>
-	<p>Madame, vous l'avez compris, vous avez 2 élèves <strong>extrêmement drôle </strong>! (et on insiste sur le drôle)</p>
-	<p> Donc madame, on espère que vous allez bien vous amuser avec notre <strong>Super site trop génial de la mort </strong>.</p>
-	<p class="meme"> Voici les memes ! </p>
+	<div class="fontBig">
+		<br/>Suite a un eclair de génie et une absence d'idées, cette page de notre site est 
+		<br/>consacrée à un générateur de memes. Celui-ci est codé en JavaScript, un langage 
+		<br/>dans lequel nous avons très peu d'experience. 
+	</div>	
+    <br/>
 	<br/>
-    <button class="boutanim" onclick="memeGen()">Test</button>
+	<br/>
+	<br/>
+	<button class="boutanim" onclick="memeGen()">Test</button>
     <br/>
     <br/>
-	<p id="rancap"></p>
+	<p id="rancap"></p> <!--Lignes avec un id, qui permet de les lier au script-->
     <p id="resnum"></p>
     <br/>
     <br/>
@@ -40,6 +42,5 @@
 	<br/>
 	<br/>
 	<br/>
-	<p class="memebox"> </p>
 	</body>
 </html>
