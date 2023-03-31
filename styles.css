@@ -4,27 +4,28 @@ body {
 	font-family: "Verdana"; 
 	text-align: center 
 }
-.para1 {
+.floatr {/*float a droite*/
+	float: right;
+}
+.floatl {/*float a gauche*/
+	float: left;
+}
+.para1 {/*Taille du texte: 25 pixels*/
 	font-size: 25px;
 }
-h1 {
+h1 {/*Bordure de 1px, fond gris, couleur du texte blanc*/
 	border: 1px solid #2F2D2E; 
 	background: rgb(47,45,46);
 	color: white;
 }
-.titlepad { 
+.titlepad { /*Padding de la banniere*/
 	padding-top: 25px; 
 	padding-bottom: 25px; 
 }
-strong {
+strong {/*Tout le texte en gras sera rose*/
 	color: #FFA69E;/*def pink*/
 } 
-.meme { 
-	font-family: "Trebuchet MS", sans-serif; 
-	font-size: 18pt;
-	color: white
-}
-.boutanim {
+.boutanim { /*Classe du bouton*/
     background-color: #000000;
     border: 2px solid white;
     border-radius: 4px;
@@ -35,7 +36,7 @@ strong {
     display: inline-block;
     font-size: 16px;
 }
-.boutanim:hover {
+.boutanim:hover { /*Lorsque l'on passe la souris au dessus du bouton*/
     background-color: black;
     border-radius: 4px;
     animation-name: rgbanim;
@@ -51,35 +52,54 @@ strong {
     80% {border: 2px solid purple;color: purple;}
     100% {border: 2px solid red;color: red;}
 }
-.banner{
+.banner{/*Banniere de boutons de nav*/
     background-color:#4f4d4d;/*gray*/
     color: #D7EBBA;
     height: 40px;
     font-size: 16pt;
     text-align: center;
     margin: 0px;
-    padding-top: 25px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
-.fontBig{
+.fontBig{/*+ grande police*/
     font-size: 23px;
 }
-.centrerTexte{
+.centrerTexte{/*centrer le texte*/
     text-align: center;
 }
-lienaa{
+lienaa{/*Pour le bouton de nav*/
 	padding: 5px;
 	border: 2px solid #D7EBBA;
 	border-radius: 10px;
 }
-lienaa:hover {
-    background-color: #617544;
+lienaa:hover {/*Passe la souris au dessus du bouton de nav*/
     font-weight: bold;
+	animation: buttonHover 1.5s linear 0s infinite normal;
 }
-a{
+@keyframes buttonHover {/*Animation bouton de nav*/
+	0% {background-color: transparent;}
+	50% {background-color: #617544;}
+	100% {background-color: transparent;}
+}
+a{/*Pour retirer la couleur bleue et le soulignage automatique des liens*/
     color: #D7EBBA;
     text-decoration: none;
 }
-bigAhhSlash {
-    size: 400px;
+.twlink {/*Soulignage des liens*/
+	text-decoration-line: underline;
 }
+.twlink:hover {/*Changement de couleur des liens lorsque l'on passe la souris*/
+	text-decoration-line: underline;
+	color: #FFA69E;
+}
+.unblurOnHover {/*Floute l'image de base*/
+	filter: blur(16px)
+}
+.unblurOnHover:hover {/*Joue l'anim lorsque l'on passe la souris dessus*/
+	animation: unblur 0.3s linear 0s 1 normal forwards;
+}
+@keyframes unblur {/*Défloute l'image*/
+	0% {filter: blur(16px)}
+	50% {filter: blur(8px)}
+	100% {filter: blur(0px)}
